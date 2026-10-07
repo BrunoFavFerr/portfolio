@@ -1,0 +1,89 @@
+/* Remove margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo da página */
+body {
+    min-height: 100vh;
+
+    background: linear-gradient(
+        to top,
+        #241510,
+        #3d261c,
+        #442e21,
+        #69533c
+    );
+
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 140px; /* altura do header */
+    overflow: hidden;
+}
+
+/* Imagem do Header */
+.header img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Conteúdo */
+.conteudo {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+/* Títulos */
+h1 {
+    color: #f5d6a0;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #f5d6a0;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #ffe0a8;
+    margin-top: 40px;
+}
+
+/* Parágrafos */
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #1b100c;
+}
+
+.logo-navbar {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.navbar {
+    background-color: #000000 !important;
+}

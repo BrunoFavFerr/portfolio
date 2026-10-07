@@ -1,0 +1,849 @@
+:root {
+    --bg: #0f0000;
+    --card: #141414;
+    --border: #292929;
+    --yellow: #f5c542;
+    --white: #f5f5f5;
+    --gray: #8b8b8b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background: var(--yellow);
+    color: #000;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: rgba(8, 8, 8, .94);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white) !important;
+    font-weight: 600;
+}
+
+.logo-bruno {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--yellow);
+    border-radius: 6px;
+    color: var(--yellow);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #bbb !important;
+    font-size: 14px;
+    margin-left: 18px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--yellow) !important;
+}
+
+
+/* =========================
+   TEXTOS
+========================= */
+
+.hero-tag,
+.content-label {
+    color: var(--yellow);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.hero-tag {
+    margin-bottom: 20px;
+}
+
+.content-label {
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.hero h1 {
+    max-width: 850px;
+    font-size: clamp(48px, 7vw, 90px);
+    line-height: .95;
+    letter-spacing: -4px;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+.hero-subtitle {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.hero-description {
+    max-width: 600px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn-primary-custom,
+.btn-outline-custom {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: .2s;
+}
+
+.btn-primary-custom {
+    background: var(--yellow);
+    border: 1px solid var(--yellow);
+    color: #000;
+}
+
+.btn-primary-custom:hover {
+    background: #ffd95a;
+    color: #000;
+}
+
+.btn-outline-custom {
+    border: 1px solid #444;
+    color: #bbb;
+}
+
+.btn-outline-custom:hover {
+    border-color: var(--yellow);
+    color: var(--yellow);
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.areas {
+    padding: 90px 0;
+    background: #101010;
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title p {
+    color: var(--yellow);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   PÁGINAS INTERNAS
+========================= */
+
+.inner-page {
+    min-height: 100vh;
+    padding: 140px 0 80px;
+}
+
+.inner-header {
+    max-width: 750px;
+    margin-bottom: 65px;
+}
+
+.inner-header h1 {
+    font-size: clamp(45px, 7vw, 75px);
+    line-height: 1;
+    letter-spacing: -3px;
+    margin: 15px 0 20px;
+}
+
+.inner-header > p:last-child {
+    max-width: 600px;
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.area-card,
+.school-card,
+.work-card,
+.hobby-card,
+.simple-card {
+    height: 100%;
+    padding: 25px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: .2s;
+}
+
+.area-card:hover,
+.school-card:hover,
+.work-card:hover,
+.hobby-card:hover,
+.simple-card:hover {
+    border-color: #555;
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   CARDS DA HOME
+========================= */
+
+.area-card {
+    display: block;
+    position: relative;
+    color: var(--white);
+}
+
+.area-card:hover {
+    color: var(--white);
+}
+
+.area-number,
+.school-card > span,
+.work-card-number,
+.hobby-number {
+    position: absolute;
+    top: 15px;
+    right: 17px;
+    color: #444;
+    font-size: 10px;
+}
+
+.area-icon,
+.school-card-icon,
+.work-icon,
+.hobby-icon {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.area-card h3,
+.school-card h3,
+.work-card h3,
+.hobby-card h3,
+.simple-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.area-card p,
+.school-card p,
+.work-card p,
+.hobby-card p,
+.simple-card p {
+    color: var(--gray);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.area-link,
+.work-card a {
+    display: inline-block;
+    color: var(--yellow);
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+/* =========================
+   ESCOLA
+========================= */
+
+.school-intro {
+    margin-bottom: 35px;
+}
+
+.school-year {
+    padding: 55px 0;
+    border-top: 1px solid #222;
+}
+
+.year-header {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.year-number {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--yellow);
+    border-radius: 50%;
+    color: var(--yellow);
+    font-size: 11px;
+}
+
+.year-header h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.year-header p:last-child {
+    color: var(--gray);
+    font-size: 13px;
+    margin: 0;
+}
+
+.school-card {
+    display: block;
+    position: relative;
+    min-height: 185px;
+    color: var(--white);
+}
+
+.school-card:hover {
+    color: var(--white);
+}
+
+
+/* =========================
+   PROJETOS
+========================= */
+
+.project-item {
+    padding: 60px 0;
+    border-top: 1px solid #222;
+}
+
+.project-image {
+    min-height: 320px;
+    display: grid;
+    place-items: center;
+    background: #111;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.project-image-content span,
+.project-image-content small {
+    display: block;
+    color: var(--gray);
+}
+
+.project-image-content strong {
+    display: block;
+    color: var(--yellow);
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.project-info h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.project-info p {
+    color: var(--gray);
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.technologies {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.technologies span {
+    padding: 5px 9px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: #bbb;
+    font-size: 11px;
+}
+
+.project-button {
+    color: var(--yellow);
+    font-size: 13px;
+}
+
+
+/* =========================
+   TRABALHOS
+========================= */
+
+.work-category {
+    padding: 50px 0;
+    border-top: 1px solid #222;
+}
+
+.work-category-header {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.work-category-header > span {
+    color: var(--yellow);
+}
+
+.work-category-header h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.work-card {
+    position: relative;
+}
+
+
+/* =========================
+   HOBBIES
+========================= */
+
+.hobby-intro {
+    margin-bottom: 30px;
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px 0;
+    border-top: 1px solid #222;
+}
+
+.hobby-card {
+    position: relative;
+    min-height: 210px;
+}
+
+.hobby-statement {
+    padding: 60px 0;
+    border-top: 1px solid #222;
+    text-align: center;
+}
+
+.hobby-statement span {
+    color: #bbb;
+    font-size: 17px;
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+.contact-info h2,
+.contact-box h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: var(--gray);
+    line-height: 1.8;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #222;
+}
+
+.contact-item > span {
+    display: block;
+    color: var(--yellow);
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+
+.contact-item a,
+.contact-item p {
+    color: #bbb;
+    font-size: 14px;
+    margin: 0;
+}
+
+.contact-item a:hover {
+    color: var(--yellow);
+}
+
+.contact-box {
+    padding: 30px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.contact-box label {
+    color: #bbb;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.custom-input {
+    background: #101010 !important;
+    border: 1px solid var(--border) !important;
+    color: var(--white) !important;
+}
+
+.custom-input:focus {
+    border-color: var(--yellow) !important;
+    box-shadow: none !important;
+}
+
+.custom-input::placeholder {
+    color: #555;
+}
+
+.contact-button {
+    padding: 11px 20px;
+    background: var(--yellow);
+    border: 1px solid var(--yellow);
+    border-radius: 5px;
+    color: #000;
+    font-size: 13px;
+}
+
+.contact-final {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.contact-final span {
+    color: var(--yellow);
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.contact-final h2 {
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.profile-placeholder {
+    min-height: 350px;
+    display: grid;
+    place-items: center;
+    background: #111;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-symbol {
+    width: 85px;
+    height: 85px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    border: 1px solid var(--yellow);
+    border-radius: 50%;
+    color: var(--yellow);
+}
+
+.profile-placeholder p {
+    color: #bbb;
+    font-size: 14px;
+}
+
+.profile-placeholder small {
+    color: #555;
+}
+
+
+/* =========================
+   VOLTAR
+========================= */
+
+.back-area {
+    margin-top: 70px;
+    padding-top: 25px;
+    border-top: 1px solid #222;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 25px 0;
+    background: #050505;
+    border-top: 1px solid #222;
+    text-align: center;
+}
+
+footer p {
+    color: #bbb;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+footer span {
+    color: #555;
+    font-size: 11px;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 991px) {
+
+    .nav-link {
+        margin-left: 0;
+        padding: 9px 0 !important;
+    }
+
+    .inner-page {
+        padding-top: 120px;
+    }
+
+    .hobby-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .inner-header h1 {
+        letter-spacing: -2px;
+    }
+
+    .project-image {
+        min-height: 250px;
+    }
+
+    .year-header {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero h1,
+    .inner-header h1 {
+        font-size: 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 17px;
+    }
+
+    .hero-description,
+    .inner-header > p:last-child {
+        font-size: 14px;
+    }
+
+    .inner-page {
+        padding: 110px 0 60px;
+    }
+
+    .hobby-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .school-card {
+        min-height: 170px;
+    }
+
+    .contact-box {
+        padding: 22px;
+    }
+}
+/* =========================================
+MAIS
+========================================= */
+
+.more-page {
+min-height: 100vh;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+padding: 40px 20px;
+
+background: var(--preto);
+
+
+}
+
+.more-container {
+width: 100%;
+max-width: 600px;
+}
+
+.more-container h1 {
+margin-bottom: 30px;
+
+color: var(--branco);
+
+font-size: 32px;
+font-weight: 500;
+
+
+}
+
+.more-links {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.more-link {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+width: 100%;
+
+padding: 18px 20px;
+
+background-color: #000;
+border: 1px solid var(--cinza-escuro);
+border-radius: 6px;
+
+color: var(--branco);
+text-decoration: none;
+
+font-size: 15px;
+
+transition: 0.2s;
+
+
+}
+
+.more-link:hover {
+color: var(--branco);
+
+border-color: var(--amarelo);
+
+background: #181818;
+
+
+}
+
+.more-link span:last-child {
+color: var(--amarelo);
+}
+
+.imagem-logob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-logob img {
+    width: 500px;
+    max-width: none;
+    height: auto;
+}
+
+.inner-page .content-block p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.inner-page .content-block p {
+    color: #cfcfcf;
+}
+
+.inner-page .content-block h2 {
+    color: #eeeeee;
+}
+
+.inner-page .content-label {
+    color: #f5c542;
+}

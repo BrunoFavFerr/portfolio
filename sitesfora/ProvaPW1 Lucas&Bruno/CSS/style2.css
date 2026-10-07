@@ -1,0 +1,102 @@
+/* Área principal da Home */
+.conteudo {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+/* Seções */
+.historia,
+.sobre {
+    background: rgba(30, 15, 10, 0.65);
+    padding: 45px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Pequeno título acima do título principal */
+.subtitulo {
+    display: block;
+    color: #d6a875;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Título principal */
+.historia h1 {
+    color: #ffe0b2;
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+/* Segundo título */
+.sobre h2 {
+    color: #ffe0b2;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* Textos */
+.conteudo p {
+    color: #f1e3d5;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Nome da cafeteria */
+.conteudo strong {
+    color: #d6a875;
+}
+
+/* Frase final */
+.frase-final {
+    margin-top: 40px;
+    padding: 25px;
+
+    border-left: 4px solid #c49a6c;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border-radius: 10px;
+}
+
+.frase-final span {
+    font-size: 30px;
+}
+
+.frase-final p {
+    color: #ffe0b2;
+    font-size: 20px;
+    font-style: italic;
+    margin: 10px 0 0;
+}
+
+@media (max-width: 768px) {
+
+    .conteudo {
+        padding: 50px 20px;
+    }
+
+    .historia,
+    .sobre {
+        padding: 30px 25px;
+    }
+
+    .historia h1 {
+        font-size: 32px;
+    }
+
+    .sobre h2 {
+        font-size: 26px;
+    }
+
+    .conteudo p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <link rel="stylesheet" href="CSS/style.css">
+    <title>Cafeteria Nova</title>
+</head>
+<header class="header">
+  <img src="imagens/imageFideli.png" alt="Imagem do header">
+
+
+</header>
+<body>
+     <nav class="navbar navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+    <img src="imagens/logo.png" alt="Logo NVT" class="logo-navbar">
+    Cafeteria NVT
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina2.html"> Cardápio  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina3.html">  Galeria e Lojas  </a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" href="pagina4.html">  Programs de Fidelidade  </a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="pagina5.html">  Pedidos e reservas  </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <section class="container my-5">
+
+        <div class="card shadow-lg border-0 rounded-4 p-5 text-center">
+
+            <h1 class="display-5 fw-bold mb-2">
+                Participe do Café-Todo-Dia
+            </h1>
+
+            <h2 class="h4 text-secondary mb-4">
+                Nosso programa de fidelidade
+            </h2>
+
+            <p class="fs-5">
+                Faça parte do <strong>Café-Todo-Dia</strong> e aproveite benefícios
+                exclusivos da Cafeteria NVT!
+            </p>
+
+            <p class="text-secondary mb-4">
+                A cada compra, você acumula pontos que podem ser trocados
+                por produtos e descontos especiais.
+            </p>
+
+            <div>
+                <button type="button"
+                    class="btn btn-dark btn-lg px-4 py-2 rounded-pill shadow"
+                    style="box-shadow: 0 0 18px rgba(0,0,0,0.5) !important;"
+                    onclick="Participar()">
+                    Participar do Café-Todo-Dia
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        function Participar() {
+            alert("Agora Você faz parte do Cafe-Todo-Dia")
+        }
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+    <footer class="footer">
+    <div class="footer-conteudo">
+        <h2>NVT - Caferia</h2>
+
+        <div class="linha"></div>
+
+        <p class="direitos">
+            © 2026 NVT Cafeteria — Todos os direitos reservados.
+        </p>
+
+        <p class="autores">
+            Desenvolvido por <strong>Lucas & Bruno</strong>
+        </p>
+    </div>
+</footer>
+</html>

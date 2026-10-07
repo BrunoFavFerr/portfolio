@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computador da Evidência — Arquivo Bloqueado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+
+  <main class="terminal">
+    <header class="topbar">
+      <div class="brand"><span class="prompt">›_</span> COMPUTADOR DA EVIDÊNCIA</div>
+      <div class="status"><span class="dot"></span> SISTEMA ATIVO</div>
+    </header>
+
+    <section id="lockScreen" class="screen">
+      <div class="illustration" aria-hidden="true">
+        <div class="laptop">
+          <div class="laptop-screen">
+            <div class="mini-lock">🔒</div>
+            <div class="mini-inputs">××/××/××××</div>
+          </div>
+          <div class="laptop-base"></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="eyebrow">ARQUIVO // PROVAS_URGENTES</div>
+        <h1>ARQUIVO PROTEGIDO</h1>
+        <p class="instruction">Digite a senha (formato de data DD/MM/AAAA):</p>
+
+        <div class="pin-row" id="pinRow">
+          <input class="pin pin-short" maxlength="2" inputmode="numeric" autocomplete="off" placeholder="DD" aria-label="Dia">
+          <span class="sep">/</span>
+          <input class="pin pin-short" maxlength="2" inputmode="numeric" autocomplete="off" placeholder="MM" aria-label="Mês">
+          <span class="sep">/</span>
+          <input class="pin pin-long" maxlength="4" inputmode="numeric" autocomplete="off" placeholder="AAAA" aria-label="Ano">
+        </div>
+
+        <button id="unlockBtn" class="action">DESBLOQUEAR</button>
+        <div id="error" class="error">SENHA INCORRETA — ACESSO NEGADO</div>
+
+        <div class="restricted">
+          <span>ACESSO RESTRITO</span>
+          <span>SOMENTE PESSOAS</span>
+          <span>AUTORIZADAS</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="successScreen" class="screen success hidden">
+      <div class="success-icon">
+        <div class="check">✓</div>
+      </div>
+      <div class="eyebrow">SISTEMA // VERIFICAÇÃO CONCLUÍDA</div>
+      <h2>PARABÉNS!</h2>
+      <h3>ARQUIVO RECUPERADO</h3>
+      <div class="divider"></div>
+      <p>Obrigado por jogar!</p>
+      <span class="cursor">_</span>
+
+      <div class="recovery-log">
+        <div>ACESSO CONCEDIDO.</div>
+        <div>ARQUIVO: PROVAS_URGENTES</div>
+        <div>COPIANDO ARQUIVOS... <strong>100%</strong></div>
+        <div class="bar"><span></span></div>
+        <div>EVIDÊNCIAS RECUPERADAS.</div>
+      </div>
+
+      <button id="restartBtn" class="secondary">REINICIAR TERMINAL</button>
+    </section>
+
+    <footer>
+      <span>CASE-ID: FDA-017</span>
+      <span>INVESTIGAÇÃO ATIVA</span>
+      <span>v1.0 // EVIDÊNCIA DIGITAL</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
